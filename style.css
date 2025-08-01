@@ -1,0 +1,80 @@
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+h1 {
+  color: #00ffc2;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 194, 0.2);
+}
+
+input, select {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.6rem 0;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  background-color: #00ffc2;
+  color: #121212;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #00e6ae;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 280px;
+  background-color: #1e1e1e;
+  color: #00ffcc;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 0 12px #00ffcc;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
